@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
 
 $blue: rgba(0, 60, 108, 1);
+$small-width: 20em;
+$large-width: 42em;
 
 body {
   background-image: radial-gradient(circle at 50% 50%, transparentize($blue, .55), $blue), url('images/subtle_grunge.png');
@@ -12,6 +14,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: .5em;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, .45);
 }
 
 small {
@@ -22,16 +25,56 @@ small {
   text-transform: uppercase;
 }
 
+p,
+h2 {
+  margin: .75em auto .5em;
+  max-width: $small-width;
+}
+
+h2 {
+  color: #fff;
+}
+
 p {
   color: #FDD200;
   font-weight: 400;
-  margin: .75em auto .5em;
-  max-width: 20em;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, .45);
 }
 
 a {
   color: #99cc33;
+}
+
+.how-to {
+  display: block;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: $small-width;
+  padding: 0;
+
+  ul {
+    margin: .75em 0 .5em;
+    padding: 0;
+  }
+
+  li:before {
+    content: "";
+    margin: 0;
+    padding: 1em 0;
+  }
+
+  li {
+    color: #FDD200;
+    margin: 0;
+    padding: 1em 0;
+  }
+}
+
+.pledge {
+  display: block;
+  font-size: 1.5em;
+  margin: 1em auto;
+  max-width: $small-width;
+  text-align: center;
 }
 
 .header {
@@ -60,7 +103,6 @@ a {
     font-weight: 500;
     margin: .25em 0;
     text-align: center;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, .45);
   }
 }
 
@@ -83,7 +125,7 @@ a {
 
   .header {
     flex-direction: row;
-    max-width: 42em;
+    max-width: $large-width;
     margin: 0 auto;
     justify-content: space-between;   
     
@@ -104,7 +146,11 @@ a {
   p {
     font-size: 1.25em;
   }
-  
+
+  .how-to {
+    max-width: $small-width;
+  }
+
   #counter {
     font-size: 3.6em;
     margin-bottom: .75em;
@@ -170,3 +216,51 @@ a {
 #counter i {
   font-style: normal;
 }
+
+ul {
+  display: block;
+  margin: 2em auto;
+  padding: 1em;
+  max-width: $large-width;
+
+  .list-section {
+    border-bottom: 1px solid #FDD200;
+    color: #FDD200;
+    display: block;
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+
+  .list-section:before {
+    content: "";
+  }
+}
+
+li {
+  //border-bottom: 1px dotted #fff;
+  display: block;
+  margin: 1.5em auto;
+  max-width: 40em;
+  padding: .5em 0 1em .5em;
+
+  strong {
+    display: block;
+    font-size: 1.25em;
+    margin-bottom: .5em;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    max-width: $large-width;
+  }
+}
+
+li:before {
+  content: "» ";
+  float: left;
+  padding-right: .25em;
+}
+
