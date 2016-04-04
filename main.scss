@@ -80,7 +80,17 @@ a {
 
 .home-link {
   float: right;
-  margin-top: .25em;
+  margin-top: -.5em;
+}
+
+.large-container {
+  display: block;
+  margin: 1em auto .5em;
+  max-width: $large-width;
+}
+
+.large-container h2 {
+  margin: 1em 0 .5em;
 }
 
 .header {
