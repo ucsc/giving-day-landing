@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
 
 $blue: rgba(0, 60, 108, 1);
-$small-width: 20em;
+$small-width: 28em;
 $large-width: 42em;
 
 body {
@@ -29,7 +29,6 @@ small {
 p,
 h2 {
   margin: .75em auto .5em;
-  max-width: $small-width;
 }
 
 h2 {
@@ -45,10 +44,12 @@ a {
   color: #99cc33;
 }
 
+
+
 .how-to {
   display: block;
   font-weight: 400;
-  margin: 0 auto;
+  margin: 1em auto;
   max-width: $small-width;
   padding: 0;
 
