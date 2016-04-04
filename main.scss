@@ -72,9 +72,15 @@ a {
 .pledge {
   display: block;
   font-size: 1.5em;
-  margin: 1em auto;
+  margin: .5em auto;
   max-width: $small-width;
+  padding-bottom: 1em;
   text-align: center;
+}
+
+.home-link {
+  float: right;
+  margin-top: .25em;
 }
 
 .header {
@@ -219,8 +225,8 @@ a {
 
 ul {
   display: block;
-  margin: 2em auto;
-  padding: 1em;
+  margin: 0 auto;
+  padding: 0 1em;
   max-width: $large-width;
 
   .list-section {
