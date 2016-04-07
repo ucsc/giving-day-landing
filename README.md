@@ -10,3 +10,7 @@ For deployment:
 
 - Run `bundle exec s3_website push`
 - The contents of the _build_ directory will be pushed to the Amazon S3 bucket that hosts the Giving Day landing page.
+
+Note:
+
+- For s3_website to push to S3, you'll need to have the correct Amazon S3 credentials configured as environment variables in `~/.bash_profile`.
