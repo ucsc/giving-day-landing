@@ -284,3 +284,11 @@ li:before {
   padding-right: .25em;
 }
 
+iframe {
+	display: block;
+	height: 100%;
+	margin: 0 auto;
+	max-height: 480px;
+	max-width: 853px;
+  width: 100%;
+}
